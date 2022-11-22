@@ -128,6 +128,33 @@ body{
 .auth-nav .item:not(:last-child){
     margin-right: 40px;
 }
+/*  HW 4   */
+
+.mailto::before {
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: tomato;
+    background-image: ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tel::before{
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: tomato;
+    background-image: ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .mailto,
 .tel {
@@ -139,13 +166,28 @@ body{
 
 
 
-
+/* HW4  */
 
 .hero{
     padding: 200px 0px;
     text-align: center;
-    background:var(--secondary-bg-color);
+    background: var(--secondary-bg-color);
 }
+.overlay{
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image:linear-gradient(
+        to right,rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4 )),
+    url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
 
 .hero-title{
 margin-top: 0px;
@@ -204,6 +246,28 @@ color: var(--primary-bg-color);
 }
 .features-list .item{
     width: 270px;
+} 
+
+/* HW4*/
+.features-list .item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: tomato;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-attention::before{
+    background-image: ;
+}
+.icon-punctuality::before{
+    background-image: ;
+}
+.icon-plan::before{
+    background-image: ;
+}
+.icon-technology::before{
+    background-image: ;
 }
 
 .features-title{
@@ -266,10 +330,7 @@ color: var(--primary-bg-color);
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.work.section,
-.team.section{
-    padding-top: 0px;
-}
+
 
 .team.title{
     margin-top: 0px;
@@ -307,6 +368,7 @@ background:var(--primary-bg-color);
         color:var(--title-text-color);
 }
 .team-text{
+    margin-bottom: 16px;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
@@ -317,6 +379,24 @@ color:var(--primary-text-color);
     margin-top: 0px;
     max-width: 100%;
     height:auto;
+}
+.team-soc-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-soc-items{
+    width: 44px;
+    height: 44px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+.team-soc-items:not(:last-child){
+    margin-right: 10px;
+}
+.team-soc-link{
+    width: 100%;
+    height: 100%;
 }
 
 
