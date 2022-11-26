@@ -140,7 +140,9 @@ body{
 }
 
 .mailto:hover,
-.tel:hover{
+.tel:hover,
+.mailto:focus
+.tel:focus{
     fill: var(--accent-color);
 }
 
@@ -403,7 +405,8 @@ color:var(--primary-text-color);
     align-items: center;
     fill: var(--primary-text-color);
 }
-.team-soc-link:hover{
+.team-soc-link:hover,
+.team-soc-link:focus{
     background: #2196F3;
     fill:var(--primary-bg-color);
     border-radius: 50%;
@@ -447,10 +450,12 @@ border-radius: 4px;
 }
 
 
-.clients-items:hover{
+.clients-items:hover,
+.clients-items:focus{
     border-color: var(--accent-color);
 }
-.clients-link:hover{
+.clients-link:hover,
+.clients-link:focus{
     fill: var(--accent-color);
 }
 
@@ -537,6 +542,12 @@ background: var(--secondary-bg-color);
 }
 .footer-soc-items:hover{
     background-color: var(--accent-color);
+    border-radius: 50%;
+}
+.footer-soc-link:focus{
+    background-color: var(--accent-color);
+    
+    border-radius: 50%;
 }
 
 
